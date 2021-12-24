@@ -10,7 +10,8 @@ A command-line program to make your mouse wander. ;)
 
 ### Homebrew
 
-Coming soon!
+    brew tap ian-henderson/afk
+    brew install afk
 
 ## Usage
 
