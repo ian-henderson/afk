@@ -1,4 +1,4 @@
-# afk.rs
+# afk
 
 A command-line program to make your mouse wander. ;)
 
