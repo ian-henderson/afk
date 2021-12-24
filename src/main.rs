@@ -105,9 +105,11 @@ fn get_coordinate_deltas(opt: &Opt, rng: &mut ThreadRng) -> Result<(i32, i32, i3
     let distance = rng.gen_range(opt.min_distance..=opt.max_distance);
 
     let x_absolute = rng.gen_range(0..=distance);
+
     let x_delta = if rng.gen() { x_absolute } else { -x_absolute };
 
     let y_absolute = ((distance.pow(2) - x_absolute.pow(2)) as f64).sqrt() as i32;
+
     let y_delta = if rng.gen() { y_absolute } else { -y_absolute };
 
     Ok((x_delta, y_delta, distance))
